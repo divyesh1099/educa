@@ -1,0 +1,80 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Physics",
+    "slug": "physics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Chemistry",
+    "slug": "chemistry"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Maths",
+    "slug": "maths"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 4,
+  "fields": {
+    "title": "Accounts",
+    "slug": "accounts"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 5,
+  "fields": {
+    "title": "Banking",
+    "slug": "banking"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 6,
+  "fields": {
+    "title": "Management",
+    "slug": "management"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "subject": 2,
+    "title": "Science",
+    "slug": "science",
+    "overview": "P, C M, B sikhaya Jaayega\r\nP, C M, B sikhaya Jaayega\r\nP, C M, B sikhaya Jaayega\r\nP, C M, B sikhaya Jaayega\r\nP, C M, B sikhaya Jaayega\r\nP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya JaayegaP, C M, B sikhaya Jaayega",
+    "created": "2021-03-02T20:33:38.748Z"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Environment",
+    "description": "Aaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party partyAaj blue hai paty party party"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Muscles",
+    "description": "Naccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcbNaccahjoaksoijai ajhbcbuyef hjabhjwcbhwjcb"
+  }
+}
+]
