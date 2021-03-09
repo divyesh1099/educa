@@ -27,7 +27,7 @@ SECRET_KEY = 'vo26yb0-1g!nx9^1)x6gonm0yz8!$!ibbxz#uwemb08b)av0@!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mrugakshi-e-learning-platform', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -41,19 +41,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'students.apps.StudentsConfig',
-    'embed-video',
-    'memcache-status',
-    'rest_framework',
-    'memcached',
+    # 'embed-video',
+    # 'memcache-status',
+    # 'rest_framework',
+    # 'memcached',
 ]
 
 MIDDLEWARE = [
     
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.cache.UpdateCacheMiddleware',
+    # 'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -132,22 +132,22 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # CACHE SETTINGS
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
-        }
-    }
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#         'LOCATION': '127.0.0.1:11211',
+#         }
+#     }
 
-CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 60 * 15 # 15 minutes
-CACHE_MIDDLEWARE_KEY_PREFIX = 'educa'
+# CACHE_MIDDLEWARE_ALIAS = 'default'
+# CACHE_MIDDLEWARE_SECONDS = 60 * 15 # 15 minutes
+# CACHE_MIDDLEWARE_KEY_PREFIX = 'educa'
 
 # REST FRAMEWORK SETTINGS
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES':
-    'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    }
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES':
+#     'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+#     }
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/

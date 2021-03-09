@@ -8,9 +8,27 @@ from django.utils.safestring import mark_safe
 
 
 
+class ItemBase(models.Model):
+    owner = models.ForeignKey(User, related_name='%(class)s_related',on_delete=models.CASCADE)
+    title = models.CharField(max_length=250)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return self.title
+
+    def render(self):
+        return render_to_string('courses/content/{}.html'.format(self._meta.model_name), {'item': self})
+
+
+        
 class Subject(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
+
     class Meta:
         ordering = ['title']
 
@@ -57,20 +75,6 @@ class Content(models.Model):
         ordering = ['order']
     
 
-class ItemBase(models.Model):
-    owner = models.ForeignKey(User, related_name='%(class)s_related',on_delete=models.CASCADE)
-    title = models.CharField(max_length=250)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return self.title
-
-    def render(self):
-        return render_to_string('courses/content/{}.html'.format(self._meta.model_name), {'item': self})
 
 
 class Text(ItemBase):
