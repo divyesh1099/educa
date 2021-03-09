@@ -1,1 +1,1 @@
-web: waitress --listen=*:8000 educa.wsgi:application
+web: gunicorn educa.wsgi
