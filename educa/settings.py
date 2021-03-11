@@ -27,7 +27,7 @@ SECRET_KEY = 'vo26yb0-1g!nx9^1)x6gonm0yz8!$!ibbxz#uwemb08b)av0@!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mrugakshi-e-learning-platform.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['divyesh-e-learning-platform.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
